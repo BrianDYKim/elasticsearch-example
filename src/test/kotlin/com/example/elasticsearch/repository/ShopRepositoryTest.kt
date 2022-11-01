@@ -130,4 +130,14 @@ class ShopRepositoryTest @Autowired constructor(
             println(it.name)
         }
     }
+
+    @Test
+    @DisplayName("가게 삭제 테스트")
+    fun deleteShopTest() {
+        // given
+        val id = "8ed688e1-c448-4220-a830-4c8c97393b6c"
+
+        // when
+        shopRepository.deleteById(id)
+    }
 }
